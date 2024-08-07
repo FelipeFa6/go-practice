@@ -1,0 +1,14 @@
+package task
+
+import (
+	"github.com/felipefa6/todo-go/model"
+	"strconv"
+)
+
+templ Show(task model.Task) {
+    <div>
+        <p>{strconv.Itoa(task.ID)}</p>
+        <p>{task.Description}</p>
+        <p>{strconv.FormatBool(task.State)}</p>
+    </div>
+}
